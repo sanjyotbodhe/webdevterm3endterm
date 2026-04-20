@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useReducer } from 'react'
-import { db } from '../lib/supabaseClient'
+import { db } from '../lib/firebase'
 import { collection, query, where, getDocs, updateDoc, doc, writeBatch, getDoc } from 'firebase/firestore'
 
 const initialState = {

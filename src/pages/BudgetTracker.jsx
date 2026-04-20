@@ -7,7 +7,7 @@ import {
 import { useTrip } from '../context/TripContext'
 import { useTripAuth } from '../hooks/useTripAuth'
 import { useBudgetCalc } from '../hooks/useBudgetCalc'
-import { db } from '../lib/supabaseClient'
+import { db } from '../lib/firebase'
 import { collection, query, where, getDocs, addDoc, deleteDoc, doc, onSnapshot } from 'firebase/firestore'
 
 const CATEGORIES = ['food','transport','stay','activity','shopping','other']

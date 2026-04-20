@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTrip } from '../context/TripContext'
 import { useTripAuth } from '../hooks/useTripAuth'
-import { db, storage } from '../lib/supabaseClient'
+import { db, storage } from '../lib/firebase'
 import { collection, query, where, getDocs, addDoc, updateDoc, deleteDoc, doc, onSnapshot, writeBatch } from 'firebase/firestore'
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
 

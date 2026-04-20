@@ -11,7 +11,7 @@ import {
 import { CSS } from '@dnd-kit/utilities'
 import { useTrip } from '../context/TripContext'
 import { useTripAuth } from '../hooks/useTripAuth'
-import { db } from '../lib/supabaseClient'
+import { db } from '../lib/firebase'
 import { collection, query, where, getDocs, addDoc, updateDoc, deleteDoc, doc, onSnapshot } from 'firebase/firestore'
 
 const TYPE_META = {

@@ -83,7 +83,7 @@ function EmptyMode({ icon, label }) {
     <motion.div variants={fadeUp} className="rounded-2xl border border-dashed border-slate-200 p-8 text-center bg-slate-50">
       <p className="text-3xl mb-2">{icon}</p>
       <p className="text-slate-400 text-sm">No {label.toLowerCase()} options added yet</p>
-      <p className="text-slate-300 text-xs mt-1">Add options via Supabase or the API</p>
+      <p className="text-slate-300 text-xs mt-1">Add options via Firebase or the API</p>
     </motion.div>
   )
 }

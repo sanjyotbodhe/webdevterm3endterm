@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTrip } from '../context/TripContext'
 import { useTripAuth } from '../hooks/useTripAuth'
-import { db } from '../lib/supabaseClient'
+import { db } from '../lib/firebase'
 import { collection, query, where, getDocs } from 'firebase/firestore'
 
 const InteractiveGlobe = lazy(() => import('../components/globe/InteractiveGlobe'))

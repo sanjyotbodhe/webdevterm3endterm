@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useReducer } from 'react'
-import { db } from '../lib/supabaseClient'
+import { db } from '../lib/firebase'
 import { useAuth } from './AuthContext'
 import {
   collection,
